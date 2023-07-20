@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("input.txt")
+	file, err := os.Open("./2022/go/day-1/input.txt")
 
 	if err != nil {
 		fmt.Println("Error opening file:", err)
