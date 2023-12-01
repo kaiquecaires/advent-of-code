@@ -11,7 +11,7 @@ import (
 
 func main() {
 	pwd, _ := os.Getwd()
-	f, err := os.Open(pwd + "/cmd/2023/day_1/input.txt")
+	f, err := os.Open(pwd + "/go/2023/day_01/input.txt")
 
 	if err != nil {
 		log.Fatal(err)
