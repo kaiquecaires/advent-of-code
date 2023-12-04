@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"strings"
 )
@@ -35,17 +36,13 @@ func main() {
 			}
 		}
 
-		cardTotal := 1
-
-		for i := 1; i < count; i++ {
-			cardTotal = cardTotal * 2
-		}
+		cardTotal := math.Pow(2, float64(count-1))
 
 		if count == 0 {
 			cardTotal = 0
 		}
 
-		total += cardTotal
+		total += int(cardTotal)
 	}
 
 	fmt.Println(total)
